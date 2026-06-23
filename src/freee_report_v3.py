@@ -8,7 +8,7 @@ import anthropic
 from dotenv import load_dotenv
 
 # ===== データ処理（v1と同じ）=====
-df = pd.read_csv("freee_sample.csv")
+df = pd.read_csv("data/freee_sample.csv")
 df["発生日"] = pd.to_datetime(df["発生日"])
 df["年月"] = df["発生日"].dt.to_period("M")
 monthly = df.groupby(["年月", "収支区分"])["金額"].sum().unstack(fill_value=0)

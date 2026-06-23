@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
 # freeeの取引CSVを読み込む
-df = pd.read_csv("freee_sample.csv")
+df = pd.read_csv("data/freee_sample.csv")
 
 # 発生日を日付として扱い、月単位（2026-04 など）の「年月」列を用意する
 # → これがないと月ごとの集計ができない
