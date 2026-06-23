@@ -4,3 +4,4 @@ __pycache__/
 venv/
 *:Zone.Identifier
 *Zone.Identifier
+/profit_chart.png
